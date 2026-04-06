@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TaskManagement.Domain.Entities
+{
+    public class TeamMember : BaseEntity
+    {
+        public Guid UserId { get; set; }
+        public User User { get; set; }
+
+        public Guid TeamId { get; set; }
+        public Team Team { get; set; }
+    }
+}
